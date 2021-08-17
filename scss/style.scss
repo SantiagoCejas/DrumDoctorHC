@@ -1,0 +1,29 @@
+@import "colors";
+@import "base";
+
+.contenedor{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr;
+    max-width: 100%;
+
+}
+
+
+.gridNegro{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: black;
+    color:white;
+    justify-content: space-between;
+    text-align: left;
+    font-size: 5rem;
+    max-width: 100%;
+}
+    .gridNegro p{
+        padding-left: 2rem;
+    }
+    .gridNegro img{
+        max-width: fit-content;
+    }

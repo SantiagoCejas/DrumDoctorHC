@@ -1,0 +1,27 @@
+*{
+    margin:0;
+    Padding:0;
+    font-family: 'Montserrat', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+body{/*Fondo de todo el sitio*/
+    background-color: #ffffff;   
+}
+a{/*estilos links */
+    color:#ffffff;
+    text-decoration: none;
+}
+    a:hover{ /*Cambio de color al pasar el cursor*/
+    color:$destacado;
+    }
+
+ul{/*Atributos listas*/
+    list-style:none;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+b{
+    color:$verdemarca;
+}
