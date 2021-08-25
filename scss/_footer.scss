@@ -1,0 +1,26 @@
+.footerContenedor{
+    display:grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: $verdemarca;
+    grid-row-gap: auto;
+    grid-column-gap:auto;
+    width: 100%;
+    padding: 1rem 1rem 1rem 1rem
+}
+    .footerContenedor p, a{
+        font-size: 1.5rem;
+    }
+    .footerContenedor h4{
+        font-size: 2.5rem;
+        padding-bottom: 2rem;
+    }
+.cierre{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    text-align: center;
+    font-size: 2.5rem;
+    background:$verdemarca;
+    color:#ffffff;
+}

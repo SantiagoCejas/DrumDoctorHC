@@ -1,15 +1,13 @@
 @import "colors";
 @import "base";
+@import "footer";
 
 .contenedor{
     display:grid;
     grid-template-columns: 1fr;
     grid-template-rows: 5fr;
     max-width: 100%;
-
 }
-
-
 .gridNegro{
     display:grid;
     grid-template-columns: 1fr 1fr;
@@ -18,12 +16,70 @@
     color:white;
     justify-content: space-between;
     text-align: left;
-    font-size: 5rem;
+    font-size: 2rem;
     max-width: 100%;
+    align-items: center;
 }
-    .gridNegro p{
+    .gridNegro img{
+        width: 100%;
+    }
+    .gridNegro p {
         padding-left: 2rem;
     }
-    .gridNegro img{
-        max-width: fit-content;
+    .gridNegro h3 {
+        padding-left:2rem;
+        padding-bottom: 3rem;
     }
+.gridBlanco{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        background-color: white;
+        color:black;
+        justify-content: space-between;
+        text-align: right;
+        font-size: 2rem;
+        max-width: 100%;
+        align-items: center;
+    }
+    .gridBlanco img{
+        max-width: 100%;
+    }
+    .gridBlanco p {
+        padding-right: 2rem;
+    }
+    .gridBlanco h3 {
+        padding-right:2rem;
+        padding-bottom: 3rem;
+    }
+.logo{
+    max-width: 250px;
+}
+.contactoFooter{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    background-image: url(../multimedia/bateria_escenario.jpg);
+    background-size:cover;
+    align-items: center;
+    font-size: 2rem;
+    min-width: 50vh;
+}
+.contenedorFrase{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-content: center;
+    justify-content: center;
+}
+.fraseCorte{
+    font-style: italic;
+    font-size: 2.5rem;
+    color:#ffffff;
+    margin: 2rem 3rem 2rem 3rem;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    text-align: center;
+    line-height: 2.5rem;
+    width: 90%;
+    font-weight: 100;
+}
