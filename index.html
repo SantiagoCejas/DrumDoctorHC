@@ -13,13 +13,38 @@
 </head>
 <body>
     <header>
-
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html"><img src="multimedia/logo_blanco.png" style="max-height: 120px;"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#servicios">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#nosotros">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="site/equipos.html">Equipos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#contacto">Contacto</a>
+                </li>
+            </div>
+          </nav>
     </header>
     <section><!--Slider principal-->
-        <div>
-            <h1>
-                Backline
-            </h1>
+        <div class="sliderHome">
+            <div>
+                <h1>
+                    Backline
+                </h1>
+            </div>
         </div>
     </section>
     <section><!--Frase de corte-->
@@ -28,7 +53,7 @@
         </div>
     </section>
     <section><!--parte principal del body-->
-            <div class="contenedor">
+            <div class="contenedor" id="servicios">
                 <div class="gridNegro">
                     <img src="multimedia/bateria_escenario.jpg" alt="Batería escenario - Backline">
                     <div>
@@ -90,10 +115,14 @@
             </div> 
     </section>
     <section><!--Slider "nosotros"-->
-        <h2>Nosotros</h2>
-        <p>Horacio Cejas es la compañía de respaldo original de Córdoba Argentina y continúa siendo líder de la industria en todas las fases del negocio del entretenimiento. Se supero con éxito las expectativas de nuestros clientes al proporcionar soluciones innovadoras para artistas y su música desde el año 2013. Servicio de soporte en toda la Argentina y con personal altamente capacitado. Póngase en contacto con nuestro equipo de coordinadores de producción para obtener mas información sobre las numerosas soluciones personalizadas que ofrecemos</p>
+        <div class="nosotros" id="nosotros">
+            <div>
+                <h2>Nosotros</h2>
+                <p>Horacio Cejas es la compañía de respaldo original de Córdoba Argentina y continúa siendo líder de la industria en todas las fases del negocio del entretenimiento. Se supero con éxito las expectativas de nuestros clientes al proporcionar soluciones innovadoras para artistas y su música desde el año 2013. Servicio de soporte en toda la Argentina y con personal altamente capacitado. Póngase en contacto con nuestro equipo de coordinadores de producción para obtener mas información sobre las numerosas soluciones personalizadas que ofrecemos</p>
+            </div>
+        </div>
     </section>
-    <section class=contactoFooter><!--formulario de contacto-->
+    <section class=contactoFooter id="contacto"><!--formulario de contacto-->
         <form>
             <div>
                 <label for="nombreApellido">Nombre y Apellido</label>
@@ -140,7 +169,7 @@
             </p>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 </body>
 </html>
