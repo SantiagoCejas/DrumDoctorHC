@@ -1,5 +1,6 @@
 @import "colors";
 @import "base";
+@import "sliders";
 @import "footer";
 
 .contenedor{
@@ -16,19 +17,23 @@
     color:white;
     justify-content: space-between;
     text-align: left;
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     max-width: 100%;
     align-items: center;
 }
     .gridNegro img{
         width: 100%;
+        max-height: 600px;
     }
     .gridNegro p {
         padding-left: 2rem;
     }
     .gridNegro h3 {
+        font-size: 3rem;
+        color:$destacado;
         padding-left:2rem;
         padding-bottom: 3rem;
+        padding-top: 3rem;
     }
 .gridBlanco{
         display:grid;
@@ -38,19 +43,23 @@
         color:black;
         justify-content: space-between;
         text-align: right;
-        font-size: 1.8rem;
+        font-size: 2.5rem;
         max-width: 100%;
         align-items: center;
     }
     .gridBlanco img{
-        max-width: 100%;
+        width: 100%;
+        max-height: 600px;
     }
     .gridBlanco p {
         padding-right: 2rem;
     }
     .gridBlanco h3 {
+        font-size: 3rem;
+        color:$destacado;
         padding-right:2rem;
         padding-bottom: 3rem;
+        padding-top: 3rem;
     }
 .logo{
     max-width: 250px;
@@ -67,8 +76,8 @@
     font-style: italic;
     font-size: 2rem;
     color:#ffffff;
-    margin: 2rem 3rem 2rem 3rem;
-    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    margin: 3rem 3rem 3em 3rem;
+    padding: 1.5rem 2.5rem 1.5rem 2.5rem;
     text-align: center;
     line-height: 2.5rem;
     width: 90%;
@@ -81,7 +90,7 @@
     justify-content: center;
     align-content: center;
     text-align: center;
-    background: url(../multimedia/principal.jpeg);
+    background: url(../multimedia/nosotros.jpg);
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -89,37 +98,19 @@
     padding: 1rem 1rem 1rem 1rem;
 }
     .nosotros h2{
-        font-size: 2rem;
+        font-size: 4rem;
         font-weight: 600;
         color: #ffffff;
-        padding-bottom: 1rem;
+        margin: 3rem 3rem 1.5rem 3rem;
+        padding-bottom: 1.5rem;
     }
     .nosotros p{
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         color:#ffffff;
         font-style: italic;
+        padding: 1.5rem 1.5rem 1.5rem 1.5rem;
     }
-.sliderHome{
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    background: url(../multimedia/principal.jpeg);
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 75vh;
-    padding: 1rem 1rem 1rem 1rem;
-}
-    .sliderHome{
-        color:#ffffff;
-        font-size: 5rem;
-        font-weight: 800;
-        align-self: center;
-        justify-self: center;
-    }
+
 // Estilos para modificar bootstrap//
 nav-item{
     font-size: 3rem;
@@ -127,4 +118,112 @@ nav-item{
 }
 .navbar{
     z-index: 999;
+    position: fixed;
 }
+.navbar-light{
+    background-color: none;
+}
+.navbar-expand-lg{
+    background-color: none;
+}
+.nav-link{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color:#ffffff !important;
+}
+// Hasta acá es boostrap
+.tituloSlider {
+    width: 90%;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+    top: 40%;
+    color: #ffffff;
+}
+    .tituloSlider h1{
+        font-size:7.5rem;
+    }
+.contenedorEquipos{
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    align-content: space-between;
+    grid-row-gap: 2rem;
+    grid-column-gap: 2rem;
+    background: #000000;
+    padding:1rem 1rem 3rem 1rem;
+}
+.contenedorDetalle{
+    margin-top: 3rem;
+    padding:2rem 2rem 2rem 2rem;
+    display:grid;
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: 1fr;
+    justify-content: space-between;
+    align-content: center;
+    background: #ffffff;
+    max-width: 80%;
+    border-radius: 10%;
+}
+    .contenedorDetalle img{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        object-fit: cover;
+        position: center;
+        border-radius: 10%;
+        max-width: 100%;
+        align-self: center;
+}
+   .contenedorDetalle h3{
+        padding: 1rem 1rem 1.5rem 1rem;
+        align-self: center;
+        max-width: 100%;
+        font-weight: 500;
+    }
+    .contenedorDetalle a{
+        text-decoration: none;
+        color: #000000;
+    }
+    .contenedorDetalle a:hover{
+        color:$destacado;
+    }
+.detalleEquipos{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 2rem;
+    justify-content: space-between;
+    background: #000000;
+    max-width: 100%;
+    align-content: center;
+}
+    .detalleEquipos img{
+    max-width: 100%;
+    margin: 1rem 1rem 3rem 1rem;
+    padding: 1rem 1rem 3rem 1rem;
+    border-radius: 10%;
+}
+    .detalleEquipos ul{
+        color:#ffffff;
+        font-size: 2rem;
+        margin: 1rem 1rem 1rem 1rem;
+        padding: 1rem 1rem 1rem 1rem;
+    }
+    .detalleEquipos h2{
+        color:$destacado;
+        font-size: 3rem;
+        padding: 1.5rem 1rem 1.5rem 1rem;
+    }
+    .detalleEquipos h3{
+        color:$destacado;
+        font-size: 2.5rem;
+        padding: 1.5rem 1rem 1.5rem 1rem;
+    }
+    .detalleEquipos h4{
+        color:$destacado;
+        font-size: 2rem;
+        padding: 1.5rem 1rem 1.5rem 1rem;
+    }

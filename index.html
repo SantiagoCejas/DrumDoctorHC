@@ -13,7 +13,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
             <a class="navbar-brand" href="index.html"><img src="multimedia/logo_blanco.png" style="max-height: 120px;"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -40,7 +40,7 @@
     </header>
     <section><!--Slider principal-->
         <div class="sliderHome">
-            <div>
+            <div class="tituloSlider">
                 <h1>
                     Backline
                 </h1>
@@ -123,23 +123,31 @@
         </div>
     </section>
     <section class=contactoFooter id="contacto"><!--formulario de contacto-->
-        <form>
+        
             <div>
-                <label for="nombreApellido">Nombre y Apellido</label>
-                <input type="text" id="nombreApellido" placeholder="Juan Perez">
+                <h3>
+                    Hablemos!
+                </h3>
             </div>
             <div>
-                <label for="telefono">Teléfono</label>
-                <input type="tel" id="telefono" placeholder="123456789">
-            </div>
-            <div>
-                <label for="email">Correo electrónico</label>
-                <input type="email" id="email" placeholder="midireccion@correo.com.ar">
+                <form>
+                    <div>
+                    <label for="nombreApellido">Nombre y Apellido</label>
+                    <input type="text" id="nombreApellido" placeholder="Juan Perez">
+                </div>
+                <div>
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" placeholder="123456789">
+                </div>
+                <div>
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" placeholder="midireccion@correo.com.ar">
+                </div>
+            </form>
             </div>
             <div>
                 <input type="submit" value="Enviar"></input>
-              </div>
-        </form>
+            </div>
     </section>
     <footer>
         <div class="footerContenedor">
@@ -159,8 +167,10 @@
             </div>
             <div>
                 <h4>Contacto</h4>
-                <p>121543</p>
-                <a href="mailto:info@horaciocejas.com">info@horaciocejas.com</a>
+                <ul>
+                    <li><a href="tel: +543516452091">3516452091</a></li>
+                    <li><a href="mailto:info@horaciocejas.com">info@horaciocejas.com</a></li>
+                </ul>
             </div>
         </div>
         <div class= "cierre">

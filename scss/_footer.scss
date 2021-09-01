@@ -6,13 +6,21 @@
     grid-row-gap: auto;
     grid-column-gap:auto;
     width: 100%;
+    padding: 1rem 1rem 1rem 1rem;
 }
     .footerContenedor p, a{
         font-size: 1.5rem;
     }
     .footerContenedor h4{
-        font-size: 2.5rem;
-        padding-bottom: 2rem;
+        font-size: 2rem;
+        color:#ffffff
+    }
+    .footerContenedor a{
+        text-decoration: none;
+        color: #000000;
+    }
+    .footerContenedor a:hover{
+        color:$destacado;
     }
 .cierre{
     display: grid;
@@ -25,11 +33,17 @@
 }
 .contactoFooter{
     display: grid;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
     grid-template-columns: 1fr;
     background-image: url(../multimedia/bateria_escenario.jpg);
     background-size:cover;
-    align-items: center;
     font-size: 2rem;
     min-width: 50vh;
 }
+    .contactoFooter h3{
+        color:#ffffff;
+        font-size: 4rem;
+        font-weight: 600;
+        text-align: center;
+        padding: 1rem 1rem 1rem 1rem;
+    }
